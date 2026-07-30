@@ -1,0 +1,18 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean.SmallRegulatoryRnaPathway
+import HautevilleHouse.MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean.RnaInterferenceCore
+import HautevilleHouse.MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean.RdnaAmplification
+import HautevilleHouse.MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean.TranscriptionalSilencing
+import HautevilleHouse.MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean.ViralDefenseModel
+
+namespace HautevilleHouse
+namespace MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean
+
+def ConstrainedRnaInterferenceClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_rna_interference_endgame (A : AdmissibleClass) : ConstrainedRnaInterferenceClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MolecularBiologyRnaInterferenceTheoremCanonicalLaneLean
+end HautevilleHouse
